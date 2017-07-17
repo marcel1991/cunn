@@ -23,8 +23,6 @@ __global__ void cunn_SpatialWeightedClassNLLCriterion_updateOutput_kernel(
 {
   __shared__ AccumT partial_sums[CUDA_NUM_THREADS];
 
-  THMsg("Hello world %d", 1.0);
-
   int i, t;
   T cur_weight;
   T cur_spWeight;
